@@ -1,0 +1,17 @@
+Install dependencies
+```bash
+pip install fastapi motor beanie pydantic uvicorn pytest httpx python-dotenv pytest-asyncio
+```
+
+Start MongoDB server
+```bash
+docker-compose up -d
+```
+
+Start web server
+```bash
+uvicorn main:app --reload
+```
+
+Resting url
+http://127.0.0.1:8000/docs#/
